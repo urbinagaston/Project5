@@ -1,0 +1,28 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 8f7225ee-f2cf-46be-916b-848b725338c8
+  loglevel: INFO
+  name: loop
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  schedule:
+    month: '*'
+    time:
+      hour: '*'
+      minute: '0'
+      seconds: '0'
+    weekday:
+      day: '*'
+    year: '*'
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - script: "#!/bin/bash \nfor((num=0; num<10;)) \ndo \n        echo \"num:\"$num\
+        \ \n        let num=num+1\n        sleep 1\ndone"
+    keepgoing: false
+    strategy: node-first
+  uuid: 8f7225ee-f2cf-46be-916b-848b725338c8
+
