@@ -1,0 +1,21 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: d2b009f5-47be-4772-9ee3-26a8eda971cc
+  loglevel: INFO
+  name: urbina
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  runnerSelector:
+    runnerFilterMode: LOCAL
+    runnerFilterType: LOCAL_RUNNER
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - exec: hostname ; sleep 5
+    keepgoing: false
+    strategy: node-first
+  uuid: d2b009f5-47be-4772-9ee3-26a8eda971cc
+
