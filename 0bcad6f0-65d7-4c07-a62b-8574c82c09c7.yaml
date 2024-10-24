@@ -1,0 +1,21 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 0bcad6f0-65d7-4c07-a62b-8574c82c09c7
+  loglevel: INFO
+  name: Jade
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  runnerSelector:
+    runnerFilterMode: LOCAL
+    runnerFilterType: LOCAL_RUNNER
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - exec: hostname
+    keepgoing: false
+    strategy: node-first
+  uuid: 0bcad6f0-65d7-4c07-a62b-8574c82c09c7
+
